@@ -8,25 +8,25 @@ jobs = [
     'id': 1,
     'title': 'Data Analyst',
     'location': 'San Fransisco',
-    'salary': '$3000'
+    'salary': '$30000'
   },
   {
     'id': 2,
     'title': 'Soft. Dev',
     'location': 'LA',
-    'salary': '$1500'
+    'salary': '$15000'
   },
   {
     'id': 3,
     'title': 'Fornt-end dev',
     'location': 'Arizona',
-    'salary': '$2000'
+    'salary': '$20000'
   },
   {
     'id': 4,
     'title': 'Back-end Dev',
     'location': 'W. DC',
-    'salary': '$2500'
+    'salary': '$25000'
   },
   {
     'id': 5,
