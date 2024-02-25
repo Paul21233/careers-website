@@ -16,15 +16,22 @@
 
   <body>
     {% include 'navbar.html' %}
+    <img id="banner" class="img-fluid" src="../static/cimg1.jpg" height=320>
     <div class="container">
-      <h1 class="text-center mt-2 mb-4">
+      <!-- <h1 class="text-center mt-2 mb-4">
         {{ CompanyName }} Careers
-      </h1>
-      <img id="banner" class="img-fluid" src="../static/cimg1.jpg" height=320>
+      </h1> -->
       <h2 class="text-center mt-2 mb-4">About Sowrin</h2>
-      <p class="lead">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis elit tellus, vel euismod urna tristique et. Nullam at mi sit amet lacus lobortis aliquam. Nunc libero elit, mattis at nisl ut, rutrum consectetur erat. Aenean sit amet mauris eu nisl malesuada laoreet nec quis massa. Etiam nec neque a risus sagittis viverra id eget sem. Vestibulum quam nisi, porta tristique dapibus id, euismod eget nulla. Praesent quis condimentum est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eu diam justo. Fusce condimentum diam eu velit lobortis, quis rhoncus ligula tempor. Suspendisse non urna eget orci volutpat vehicula non nec odio. Integer varius, diam et placerat congue, sem velit sollicitudin dolor, et gravida nunc libero eu velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin enim arcu, efficitur eu sem sit amet, bibendum commodo nunc. Cras a scelerisque massa. Duis tempor ligula est, et scelerisque mauris euismod vitae.
-      </p>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis elit tellus, vel euismod urna tristique et. Nullam at mi sit amet lacus lobortis aliquam. Nunc libero elit, mattis at nisl ut, rutrum consectetur erat. Aenean sit amet mauris eu nisl malesuada laoreet nec quis massa. Etiam nec neque a risus sagittis viverra id eget sem. Vestibulum quam nisi, porta tristique dapibus id, euismod eget nulla. Praesent quis condimentum est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eu diam justo. Fusce condimentum diam eu velit lobortis, quis rhoncus ligula tempor. Suspendisse non urna eget orci volutpat vehicula non nec odio. Integer varius, diam et placerat congue, sem velit sollicitudin dolor, et gravida nunc libero eu velit.
+          </p>
+        </div>
+        <div class="d-none d-md-block col-6">
+          <img src="../static/people.jpg" style="height: 320px;">
+        </div>
+        
       <h2 class="text-center mt-2 mb-4">Job Opennings</h2>
       <p>
         {% for job in jobs %}
@@ -32,9 +39,9 @@
         {% endfor %}
       </p>
       <div class="text-center">
-        <button class="btn btn-primary btn-lg">Contact us</button>
-        <p class="mt-4">Copyright 2024, Sowrin</p>
+        <a href="mailto: paul.sowrin2002@gmail.com?subject=Question%20us%20about%20job%20openings" class="btn btn-primary btn-lg">Contact us</a>
       </div>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
